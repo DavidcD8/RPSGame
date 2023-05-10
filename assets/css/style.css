@@ -58,9 +58,8 @@
  #main-window {
      width: 30%;
      height: 30%;
-
      position: absolute;
-     border: 6px inset rgb(255, 255, 255);
+     border: 4px inset rgb(110, 110, 110);
      border-radius: 2%;
      background-image: linear-gradient(rgb(144, 0, 255), rgb(20, 116, 232));
      text-align: center;
@@ -140,7 +139,7 @@
 
  .choices {
      border: 1px solid white;
-     border-radius: 1px;
+     border-radius: 2px;
      text-align: center;
      line-height: 70px;
      width: 100px;
@@ -156,5 +155,80 @@
 
  .choices:focus {
      background-image: linear-gradient(rgb(0, 255, 128), rgb(20, 116, 232));
+
+ }
+
+
+ /* Resolution for small display 320px*/
+ @media screen and (max-width: 320px) {
+     #startdiv {
+         width: 90%;
+         height: 40%;
+         position: absolute;
+         background-size: 510px;
+         border: 4px inset rgb(255, 255, 255);
+         background-color: rgba(200, 112, 11, 0.89);
+         text-align: center;
+         font-size: larger;
+         line-height: 70px;
+         top: 30%;
+         left: 4%;
+
+     }
+
+
+     #main-window {
+         width: 90%;
+         height: 30%;
+         position: absolute;
+         border: 4px inset rgb(110, 110, 110);
+         border-radius: 2%;
+         background-image: linear-gradient(rgb(144, 0, 255),
+                 rgb(20, 116, 232));
+         font-size: larger;
+         line-height: 70px;
+         bottom: 110%;
+         left: 4%;
+         z-index: -2;
+
+     }
+
+
+     #uno,
+     #dos,
+     #tres,
+     #cuatro,
+     #cinco {
+         position: relative;
+         font-size: 4em;
+         top: 30%;
+         line-height: 70px;
+         padding: 10px;
+         margin: 0 auto;
+     }
+
+
+
+     #numofwins {
+         background-color: rgba(56, 207, 94, 0.89);
+         size: 50px;
+         border: 2px solid white;
+         border-radius: 2px;
+         float: left;
+         height: 20px;
+         width: 80px;
+         margin: 30px;
+         padding: 10px;
+         text-align: center;
+         font-size: 20px;
+         z-index: -1;
+         color: white;
+     }
+
+
+
+
+
+
 
  }
