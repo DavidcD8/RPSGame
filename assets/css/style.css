@@ -1,3 +1,6 @@
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
  body {
      background-image: url(../images/desktop-1600x900.png);
      background-color: #cccccc;
@@ -16,6 +19,8 @@
      font-size: 6em;
      top: 30%;
      line-height: 70px;
+     padding: 10px;
+     margin: 0 auto;
  }
 
 
@@ -53,9 +58,10 @@
  #main-window {
      width: 30%;
      height: 30%;
+
      position: absolute;
-     border: 6px ridge rgb(255, 255, 255);
-     border-radius: 4%;
+     border: 6px inset rgb(255, 255, 255);
+     border-radius: 2%;
      background-image: linear-gradient(rgb(144, 0, 255), rgb(20, 116, 232));
      text-align: center;
      font-size: larger;
@@ -63,6 +69,7 @@
      top: 20%;
      left: 35%;
      z-index: -2;
+
  }
 
  #numofrounds {
@@ -78,11 +85,24 @@
 
  }
 
+ #mainscreentitle {
+     font-family: 'Press Start 2P', Arial;
+     background-image: linear-gradient(rgb(144, 0, 255), rgb(20, 116, 232));
+     text-align: center;
+     padding: 10px;
+ }
+
  #startbtn {
-     width: 22%;
-     height: 8%;
+     width: 182px;
+     height: 58px;
      top: 40%;
      position: relative;
+     font-family: 'Press Start 2P', Arial;
+     border: 2px outset green;
+ }
+
+ #startbtn:hover {
+     background-image: linear-gradient(rgb(144, 0, 255), rgb(20, 116, 232));
  }
 
  #startdiv {
@@ -90,13 +110,14 @@
      height: 40%;
      position: absolute;
      background-size: 510px;
-     border: 2px solid rgb(255, 255, 255);
+     border: 4px inset rgb(255, 255, 255);
      background-color: rgba(200, 112, 11, 0.89);
      text-align: center;
      font-size: larger;
      line-height: 70px;
      top: 20%;
      left: 35%;
+
  }
 
 
@@ -125,7 +146,6 @@
      width: 100px;
      margin: 10px;
      font-size: 30px;
-
 
  }
 
