@@ -32,17 +32,7 @@
      display: flex;
  }
 
- /* #backdiv {
-     width: 40%;
-     background-color: #B0BAD9;
-     position: absolute;
-     height: 100%;
-     z-index: -3;
-     left: 30%;
-     border: 4px rgb(150, 150, 150);
-     border-style: double;
- }
-*/
+
 
  #img {
      position: relative;
@@ -52,14 +42,12 @@
 
 
  #numofwins {
-     background-color: rgba(56, 207, 94, 0.89);
      size: 50px;
-     border: 4px rgb(44, 44, 44);
-     border-style: double;
+     border: 4px inset rgba(11, 131, 200, 0.89);
      border-radius: 2px;
      align-items: center;
      height: 20px;
-     width: 70px;
+     width: 150px;
      margin: 30px;
      padding: 10px;
      text-align: center;
@@ -69,31 +57,18 @@
  }
 
  #main-window {
-     width: 30%;
+     width: 40%;
      height: 30%;
      position: absolute;
      border: 4px inset rgb(110, 110, 110);
      border-radius: 2%;
-     background-color: rgb(197, 197, 197);
+     background-color: rgb(217 217 196);
      text-align: center;
      font-size: larger;
      line-height: 70px;
      top: 20%;
-     left: 35%;
+     left: 30%;
      z-index: -2;
-
- }
-
- #numofrounds {
-     background-color: rgba(56, 207, 94, 0.89);
-     size: 50px;
-     border: 2px solid white;
-     border-radius: 2px;
-     float: right;
-     height: 10%;
-     width: 10%;
-     margin: 10px;
-     font-size: 30px;
 
  }
 
@@ -118,17 +93,17 @@
  }
 
  #startdiv {
-     width: 30%;
+     width: 40%;
      height: 40%;
      position: absolute;
      background-size: 510px;
      border: 4px inset rgb(255, 255, 255);
-     background-color: rgba(200, 112, 11, 0.89);
+     background-color: rgba(11, 131, 200, 0.89);
      text-align: center;
      font-size: larger;
      line-height: 70px;
      top: 20%;
-     left: 35%;
+     left: 30%;
 
  }
 
@@ -197,16 +172,16 @@
 
 
      #main-window {
-         width: 60%;
+         width: 40%;
          height: 40%;
          position: absolute;
          border: 4px inset rgb(110, 110, 110);
          border-radius: 2%;
-         background-color: rgb(197, 197, 197);
+         background-color: rgb(217 217 196);
          font-size: larger;
          line-height: 70px;
          bottom: 110%;
-         left: 20%;
+         left: 30%;
          font-size: 2.5em;
          z-index: -2;
 
@@ -229,13 +204,13 @@
 
 
      #numofwins {
-         background-color: rgba(11, 131, 200, 0.89);
+
          size: 50px;
-         border: 2px outset white;
+         border: 4px inset rgba(11, 131, 200, 0.89);
          border-radius: 2px;
          float: left;
          height: 60px;
-         width: 170px;
+         width: 230px;
          margin: 30px;
          padding: 10px;
          text-align: center;
@@ -266,7 +241,7 @@
  @media screen and (max-width: 1200px) {
 
      #startdiv {
-         width: 50%;
+         width: 70%;
          height: 40%;
          position: absolute;
          background-size: 510px;
@@ -276,22 +251,22 @@
          font-size: larger;
          line-height: 70px;
          top: 30%;
-         left: 25%;
+         left: 15%;
 
      }
 
 
      #main-window {
-         width: 60%;
+         width: 70%;
          height: 40%;
          position: absolute;
          border: 4px inset rgb(110, 110, 110);
          border-radius: 2%;
-         background-color: rgb(197, 197, 197);
+         background-color: rgb(217 217 196);
          font-size: larger;
          line-height: 70px;
          bottom: 110%;
-         left: 20%;
+         left: 14%;
          font-size: 2.5em;
          z-index: -2;
 
@@ -314,13 +289,14 @@
 
 
      #numofwins {
-         background-color: rgba(11, 131, 200, 0.89);
+
          size: 50px;
-         border: 2px outset white;
+         border: 4px inset rgba(11, 131, 200, 0.89);
+         border-radius: 2px;
          border-radius: 2px;
          float: left;
          height: 30px;
-         width: 100px;
+         width: 150px;
          margin: 30px;
          padding: 10px;
          text-align: center;
@@ -336,16 +312,16 @@
          border-radius: 8px;
          margin: 2px;
          width: 120px;
-         line-height: 40px;
+         line-height: 50px;
          font-size: 30px;
      }
 
  }
 
  /*Will adjust the resolution for 1024px*/
- @media screen and (min-width: 1024px) {
+ @media screen and (max-width: 1024px) {
      #startdiv {
-         width: 50%;
+         width: 65%;
          height: 40%;
          position: absolute;
          background-size: 510px;
@@ -355,7 +331,7 @@
          font-size: larger;
          line-height: 70px;
          top: 30%;
-         left: 25%;
+         left: 20%;
 
      }
 
@@ -370,13 +346,12 @@
      }
 
      #numofwins {
-         background-color: rgba(11, 131, 200, 0.89);
 
-         border: 2px outset white;
+         border: 4px inset rgba(11, 131, 200, 0.89);
          border-radius: 2px;
-         float: left;
+         border-radius: 2px;
          height: 40px;
-         width: 100px;
+         width: 150px;
          margin: 30px;
          padding: 10px;
          text-align: center;
@@ -387,32 +362,35 @@
 
 
      #main-window {
-         width: 40%;
+         width: 60%;
          height: 30%;
          position: absolute;
          border: 4px inset rgb(110, 110, 110);
          border-radius: 2%;
-         background-color: rgb(197, 197, 197);
-         font-size: larger;
+         background-color: rgb(217 217 196);
+         font-size: 30px;
          line-height: 70px;
          bottom: 110%;
-         left: 30%;
+         left: 20%;
          z-index: -2;
 
      }
 
+
+
+
  }
 
+ /* Resolution for small display 768*/
  @media screen and (max-width: 768px) {
 
      #numofwins {
-         background-color: rgba(11, 131, 200, 0.89);
+
          size: 50px;
-         border: 2px outset white;
+         border: 4px inset rgba(11, 131, 200, 0.89);
          border-radius: 2px;
-         float: left;
          height: 40px;
-         width: 130px;
+         width: 190px;
          margin: 30px;
          padding: 10px;
          text-align: center;
@@ -438,16 +416,16 @@
      }
 
      #main-window {
-         width: 90%;
+         width: 80%;
          height: 30%;
          position: absolute;
          border: 4px inset rgb(110, 110, 110);
          border-radius: 2%;
-         background-color: rgb(197, 197, 197);
+         background-color: rgb(217 217 196);
          font-size: 40px;
          line-height: 70px;
          bottom: 110%;
-         left: 4%;
+         left: 10%;
          z-index: -2;
 
      }
@@ -458,11 +436,59 @@
          margin: 6px;
          width: 120px;
          line-height: 20px;
-         font-size: 60px;
+         font-size: 50px;
+
      }
 
-     s
+
  }
+
+ @media screen and (max-width: 590px) {
+     #startdiv {
+         width: 90%;
+         height: 40%;
+         position: absolute;
+         background-size: 510px;
+         border: 2px inset rgb(255, 255, 255);
+         background-color: rgba(11, 131, 200, 0.89);
+         text-align: center;
+         font-size: larger;
+         line-height: 70px;
+         top: 30%;
+         left: 4%;
+
+     }
+
+     #main-window {
+         width: 90%;
+         height: 30%;
+         position: absolute;
+         border: 4px inset rgb(110, 110, 110);
+         border-radius: 2%;
+         background-color: rgb(217 217 196);
+         font-size: 20px;
+         line-height: 70px;
+         bottom: 110%;
+         left: 4%;
+         z-index: -2;
+
+     }
+
+
+     .choices {
+
+         margin: 4px;
+         width: 70px;
+         line-height: 40px;
+         font-size: 20px;
+     }
+
+
+ }
+
+
+
+
 
 
 
@@ -491,7 +517,7 @@
          position: absolute;
          border: 4px inset rgb(110, 110, 110);
          border-radius: 2%;
-         background-color: rgb(197, 197, 197);
+         background-color: rgb(217 217 196);
          font-size: larger;
          line-height: 70px;
          bottom: 110%;
@@ -517,13 +543,12 @@
 
 
      #numofwins {
-         background-color: rgba(11, 131, 200, 0.89);
+
          size: 50px;
-         border: 2px outset white;
+         border: 4px inset rgba(11, 131, 200, 0.89);
          border-radius: 2px;
-         float: left;
          height: 20px;
-         width: 80px;
+         width: 92px;
          margin: 30px;
          padding: 10px;
          text-align: center;
