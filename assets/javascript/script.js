@@ -55,6 +55,10 @@ function gameChoices() {
     </div>`;
 
         body.appendChild(createMenu);
+        let backdiv = document.createElement("div");
+        backdiv.setAttribute('id', 'backdiv');
+        body.appendChild(backdiv);
+        body.appendChild(createMenu);
     }
 
     //will get the choice from player and call the pickChocie function
