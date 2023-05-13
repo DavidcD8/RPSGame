@@ -1,4 +1,5 @@
 
+/*jshint esversion: 6 */
 //Loading the DOM  
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -29,16 +30,15 @@ myClick.addEventListener('click', gameChoices);
  */
 function gameChoices() {
     window.location.href = 'gamefile.html';
-    let scoreboard = document.getElementById('scoreboard');
-    console.log(scoreboard).innerText;
-
+    document.getElementById('scoreboard');
 }
-
+var picked;
+var wins;
 /**
  * This function will add the player choice to the main window div and display it on screen
  */
 function pickChoice() {
-    let = picked = "";
+    picked = "";
     playAudio();
     if (this.getAttribute('id') === "rock") {
         document.getElementById('main-window').innerHTML = `<i id="uno" class="fa-regular fa-hand-back-fist "></i>`;
@@ -115,8 +115,7 @@ function compareChoices() {
         document.getElementById("score").innerText = ++wins;
 
     } else if (picked === "rock" && result === "spock") {
-        document.getElementById('main-window').innerHTML += "You Lose!"
-            `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
+        document.getElementById('main-window').innerHTML += "You Lose!"`<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
         wins = parseInt(document.getElementById("cpuscore").innerText);
         document.getElementById("cpuscore").innerText = ++wins;
     }
@@ -205,7 +204,7 @@ function compareChoices() {
     } else if (picked === "spock" && result === "rock") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="uno" class="fa-regular fa-hand-back-fist"></i>`;
         wins = parseInt(document.getElementById("score").innerText);
-        document.getElementById("score").innerText = ++wins;;
+        document.getElementById("score").innerText = ++wins;
 
     } else if (picked === "spock" && result === "paper") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="dos" class="fa-regular fa-hand"></i>`;
@@ -213,8 +212,7 @@ function compareChoices() {
         document.getElementById("cpuscore").innerText = ++wins;
 
     } else if (picked === "spock" && result === "scissor") {
-        document.getElementById('main-window').innerHTML += "You Win!"
-            `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
+        document.getElementById('main-window').innerHTML += "You Win!"`<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
 

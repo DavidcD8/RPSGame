@@ -43,7 +43,7 @@ body {
 }
 
 #numofwins {
-    size: 50px;
+
     display: flex;
     border: 4px inset rgba(11, 131, 200, 0.89);
     border-radius: 2px;
@@ -57,7 +57,7 @@ body {
 }
 
 #cpunumofwins {
-    size: 50px;
+
     border: 4px inset rgba(11, 131, 200, 0.89);
     border-radius: 2px;
     height: 20px;
@@ -99,6 +99,7 @@ body {
     width: 182px;
     height: 58px;
     top: 40%;
+    color: white;
     position: relative;
     font-family: 'Press Start 2P', Arial;
     border: 2px outset green;
@@ -170,7 +171,7 @@ body {
 }
 
 #numofwins {
-    size: 50px;
+
     border: 4px inset rgba(11, 131, 200, 0.89);
     border-radius: 2px;
     height: 20px;
@@ -233,7 +234,7 @@ body {
     }
 
     #numofwins {
-        size: 50px;
+
         border: 4px inset rgba(11, 131, 200, 0.89);
         border-radius: 2px;
         align-items: center;
@@ -297,7 +298,7 @@ body {
     }
 
     #numofwins {
-        size: 50px;
+
         border: 4px inset rgba(11, 131, 200, 0.89);
         border-radius: 2px;
         align-items: center;
@@ -353,7 +354,7 @@ body {
     }
 
     #numofwins {
-        size: 50px;
+
         border: 4px inset rgba(11, 131, 200, 0.89);
         border-radius: 2px;
         align-items: center;
