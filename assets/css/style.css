@@ -417,7 +417,6 @@ body {
         margin: auto;
         margin-top: 20%;
         left: 30%;
-
     }
 
     #numofwins {
@@ -425,9 +424,7 @@ body {
     }
 
     #cpunumofwins {
-
         margin-top: -24px;
-
     }
 
     #main-window {
