@@ -400,6 +400,10 @@ body {
 
 /* Resolution for small display 480px*/
 @media screen and (max-width: 480px) {
+    #backbtn {
+        top: 85%;
+    }
+
 
     #startdiv {
         width: 330px;
@@ -417,18 +421,13 @@ body {
     }
 
     #numofwins {
-        size: 50px;
-        border: 4px inset rgba(11, 131, 200, 0.89);
-        border-radius: 2px;
-        align-items: center;
-        height: 20px;
-        width: 150px;
-        margin: 30px;
-        padding: 10px;
-        text-align: center;
-        font-size: 20px;
-        z-index: -1;
-        color: white;
+        margin-top: 6px;
+    }
+
+    #cpunumofwins {
+
+        margin-top: -24px;
+
     }
 
     #main-window {
@@ -447,7 +446,7 @@ body {
         display: flex;
         justify-content: center;
         margin: auto;
-        margin-top: 109px;
+        margin-top: 29px;
         width: 323px;
     }
 
@@ -458,11 +457,16 @@ body {
         line-height: 40px;
         font-size: 30px;
     }
+
+
 }
 
 
 /* Resolution for small display 320px*/
 @media screen and (max-width: 320px) {
+    #backbtn {
+        margin: 44px 0 0 2px;
+    }
 
     #startdiv {
         width: 292px;
@@ -479,18 +483,11 @@ body {
     }
 
     #numofwins {
-        size: 50px;
-        border: 4px inset rgba(11, 131, 200, 0.89);
-        border-radius: 2px;
-        align-items: center;
-        height: 20px;
-        width: 150px;
-        margin: 30px;
-        padding: 10px;
-        text-align: center;
-        font-size: 20px;
-        z-index: -1;
-        color: white;
+        bottom: 20px;
+    }
+
+    #cpunumofwins {
+        bottom: 45px;
     }
 
     #main-window {
@@ -498,12 +495,13 @@ body {
         width: 289px;
         height: 204px;
         border: 4px inset rgb(110, 110, 110);
+        margin-top: -32px;
         border-radius: 2%;
         background-color: rgb(217 217 196);
         font-size: 12px;
+        margin-bottom: -104px;
         line-height: 70px;
         text-align: center;
-
     }
 
     #choice-panel {

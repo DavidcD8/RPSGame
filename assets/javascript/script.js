@@ -29,13 +29,6 @@ myClick.addEventListener('click', gameChoices);
  */
 function gameChoices() {
     window.location.href = 'gamefile.html';
-
-    let titlebar = document.getElementById('mainscreentitle');
-    titlebar.remove();
-
-    let start = document.getElementById('start');
-    start.remove();
-
     let scoreboard = document.getElementById('scoreboard');
     console.log(scoreboard).innerText;
 

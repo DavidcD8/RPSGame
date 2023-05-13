@@ -17,13 +17,14 @@
 
     <!--will load the audio file-->
     <audio id="daudio">
-        <source src="../assets/audio/audio.mp3" type="audio/mpeg">
+        <source src="assets/audio/audio.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <!--This button will take player to the main screen-->
-    <button id="backbtn" onclick="history.back()">←</button>
 
+    <a href="index.html" class="active" aria-label="The main page"><button id="backbtn"
+            onclick="history.back()">←</button></a>
     <!--Player score-->
     <section id="scoreboard">
         <div id="numofwins">Wins: <span id="score">0</span></div>
