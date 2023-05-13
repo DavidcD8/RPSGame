@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
 body {
-    background-image: url(../images/desktop-1600x900.png);
+    background-image: url(../images/background_img.png);
     background-color: #cccccc;
     background-size: cover;
     margin: 0;
     padding: 0;
+}
+
+#backbtn {
+    top: 80%;
+    position: absolute;
+    font-size: 20px;
+    width: 50px;
+    left: 10px;
+    margin: 28px 0 10px 2px;
+    border-style: outset;
+    padding: 2px;
+    color: crimson;
+}
+
+#backbtn:hover {
+    background-image: linear-gradient(rgb(144, 0, 255), rgb(20, 116, 232));
 }
 
 #uno,
@@ -22,37 +37,38 @@ body {
     margin: 0 auto;
 }
 
-
-#scoreboard {
-    margin-bottom: 100px;
-    width: 100%;
-    height: 40%;
-    z-index: -2;
-    justify-content: center;
-    display: flex;
-}
-
-
-
 #img {
     position: relative;
 
-
 }
-
 
 #numofwins {
     size: 50px;
+    display: flex;
     border: 4px inset rgba(11, 131, 200, 0.89);
     border-radius: 2px;
     align-items: center;
     height: 20px;
     width: 150px;
-    margin: 30px;
     padding: 10px;
-    text-align: center;
     font-size: 20px;
     z-index: -1;
+    color: white;
+}
+
+#cpunumofwins {
+    size: 50px;
+    border: 4px inset rgba(11, 131, 200, 0.89);
+    border-radius: 2px;
+    height: 20px;
+    width: 150px;
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    font-size: 20px;
+    z-index: -1;
+    margin-top: -4px;
+    left: -29px;
     color: white;
 }
 
@@ -60,7 +76,7 @@ body {
     width: 500px;
     height: 300px;
     border: 4px inset rgb(110, 110, 110);
-    border-radius: 2%;
+    border-radius: 2px;
     background-color: rgb(217 217 196);
     margin: auto;
     font-size: 20px;
@@ -107,14 +123,12 @@ body {
 
 }
 
-
 #choice-panel {
     display: flex;
     justify-content: center;
     margin: 200px;
 
 }
-
 
 .choices {
     border: 1px solid white;
@@ -136,7 +150,6 @@ body {
 
 }
 
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 
@@ -154,61 +167,52 @@ body {
         left: 30%;
 
     }
+}
 
-    #scoreboard {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 40%;
-        z-index: -2;
-        justify-content: center;
-        display: flex;
-    }
+#numofwins {
+    size: 50px;
+    border: 4px inset rgba(11, 131, 200, 0.89);
+    border-radius: 2px;
+    height: 20px;
+    width: 150px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    z-index: -1;
+    margin-top: 79px;
+    left: -29px;
+    color: white;
+}
 
-    #numofwins {
-        size: 50px;
-        border: 4px inset rgba(11, 131, 200, 0.89);
-        border-radius: 2px;
-        align-items: center;
-        height: 20px;
-        width: 150px;
-        margin: 30px;
-        padding: 10px;
-        text-align: center;
-        font-size: 20px;
-        z-index: -1;
-        color: white;
-    }
+#main-window {
+    width: 500px;
+    height: 300px;
+    border: 4px inset rgb(110, 110, 110);
+    border-radius: 2px;
+    background-color: rgb(217 217 196);
+    margin: auto;
+    margin-bottom: 28%;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
 
-    #main-window {
-        width: 500px;
-        height: 300px;
-        border: 4px inset rgb(110, 110, 110);
-        border-radius: 2%;
-        background-color: rgb(217 217 196);
-        margin: auto;
-        margin-bottom: 28%;
-        font-size: 20px;
-        line-height: 70px;
-        text-align: center;
+}
 
+#choice-panel {
+    margin: auto;
+    width: 614px;
 
-    }
+}
 
-
-    #choice-panel {
-        margin: auto;
-        width: 614px;
-
-    }
-
-    .choices {
-        border: 1px solid white;
-        border-radius: 77px;
-        margin: 2px;
-        width: 120px;
-        line-height: 50px;
-        font-size: 30px;
-    }
+.choices {
+    border: 1px solid white;
+    border-radius: 77px;
+    margin: 2px;
+    width: 120px;
+    line-height: 50px;
+    font-size: 30px;
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -228,15 +232,6 @@ body {
 
     }
 
-    #scoreboard {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 40%;
-        z-index: -2;
-        justify-content: center;
-        display: flex;
-    }
-
     #numofwins {
         size: 50px;
         border: 4px inset rgba(11, 131, 200, 0.89);
@@ -256,14 +251,13 @@ body {
         width: 500px;
         height: 300px;
         border: 4px inset rgb(110, 110, 110);
-        border-radius: 2%;
+        border-radius: 2px;
         background-color: rgb(217 217 196);
         margin: auto;
         margin-bottom: 200px;
         font-size: 20px;
         line-height: 70px;
         text-align: center;
-
 
     }
 
@@ -302,15 +296,6 @@ body {
 
     }
 
-    #scoreboard {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 40%;
-        z-index: -2;
-        justify-content: center;
-        display: flex;
-    }
-
     #numofwins {
         size: 50px;
         border: 4px inset rgba(11, 131, 200, 0.89);
@@ -330,17 +315,14 @@ body {
         width: 500px;
         height: 300px;
         border: 4px inset rgb(110, 110, 110);
-        border-radius: 2%;
+        border-radius: 2px;
         background-color: rgb(217 217 196);
         margin: auto;
         font-size: 20px;
         line-height: 70px;
         text-align: center;
-
-
+        margin-bottom: 162px;
     }
-
-
 
     .choices {
         border: 1px solid white;
@@ -370,15 +352,6 @@ body {
 
     }
 
-    #scoreboard {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 40%;
-        z-index: -2;
-        justify-content: center;
-        display: flex;
-    }
-
     #numofwins {
         size: 50px;
         border: 4px inset rgba(11, 131, 200, 0.89);
@@ -398,13 +371,12 @@ body {
         width: 485px;
         height: 300px;
         border: 4px inset rgb(110, 110, 110);
-        border-radius: 2%;
+        border-radius: 2px;
         background-color: rgb(217 217 196);
         margin: auto;
         font-size: 20px;
         line-height: 70px;
         text-align: center;
-
 
     }
 
@@ -423,7 +395,6 @@ body {
         line-height: 40px;
         font-size: 30px;
     }
-
 
 }
 
@@ -445,15 +416,6 @@ body {
 
     }
 
-    #scoreboard {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 40%;
-        z-index: -2;
-        justify-content: center;
-        display: flex;
-    }
-
     #numofwins {
         size: 50px;
         border: 4px inset rgba(11, 131, 200, 0.89);
@@ -473,7 +435,7 @@ body {
         width: 306px;
         height: 207px;
         border: 4px inset rgb(110, 110, 110);
-        border-radius: 2%;
+        border-radius: 2px;
         background-color: rgb(217 217 196);
         margin: auto;
         font-size: 12px;
@@ -499,15 +461,8 @@ body {
 }
 
 
-
-
-
-
-
-
 /* Resolution for small display 320px*/
 @media screen and (max-width: 320px) {
-
 
     #startdiv {
         width: 292px;
@@ -521,16 +476,6 @@ body {
         margin: auto;
         margin-top: 15%;
 
-    }
-
-    #scoreboard {
-        margin-bottom: 100px;
-        width: 100%;
-        height: 40%;
-        z-index: -2;
-        justify-content: center;
-        display: flex;
-        margin: auto;
     }
 
     #numofwins {
@@ -559,7 +504,6 @@ body {
         line-height: 70px;
         text-align: center;
 
-
     }
 
     #choice-panel {
@@ -577,4 +521,5 @@ body {
         line-height: 40px;
         font-size: 30px;
     }
+
 }

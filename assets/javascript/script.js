@@ -1,65 +1,6 @@
-let body = document.body;
 
-const cpuArray = ["rock", "paper", "scissors", "lizard", "spock"];
-
-
-
-//listener for start menu button
-let myClick = document.getElementById('startbtn');
-myClick.addEventListener('click', gameChoices);
-
-
-/**
- * This function will remove the Start menu and create the game interface
-*/
-function gameChoices() {
-    let titlebar = document.getElementById('mainscreentitle');
-    titlebar.remove();
-    let start = document.getElementById('start');
-    start.remove();
-
-    if (myClick) {
-
-        //The game interface will be created if when start button is pressed
-        let createMenu = document.createElement("section");
-        //will add class to section 
-        createMenu.classList.add("scoreboard");
-        createMenu.innerHTML = ` <section id="scoreboard">
-        <div id="numofwins">Wins: <span id="score">0</span></div>
-        
-        
-    </section>
-    
-    
-    <div id="main-window"></div>
-    
-    
-    <div id="choice-panel">
-    
-    
-    <button type="submit" class="choices" id="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-    
-    
-    <button type="submit" class="choices" id="paper"><i class="fa-regular fa-hand"></i></button>
-    
-    
-    <button type="submit" class="choices" id="scissors"><i class="fa-regular fa-hand-scissors"></i></button>
-    
-    
-    <button type="submit" class="choices" id="lizard"><i class="fa-regular fa-hand-lizard"></i></button>
-    
-    
-    <button type="submit" class="choices" id="spock"><i class="fa-regular fa-hand-spock"></i></button>
-    
-    
-    </div>`;
-
-        body.appendChild(createMenu);
-        let backdiv = document.createElement("div");
-        backdiv.setAttribute('id', 'backdiv');
-        body.appendChild(backdiv);
-        body.appendChild(createMenu);
-    }
+//Loading the DOM  
+document.addEventListener("DOMContentLoaded", function () {
 
     //will get the choice from player and call the pickChocie function
     let cClick = document.getElementsByClassName('choices');
@@ -67,17 +8,45 @@ function gameChoices() {
         cClick[i].addEventListener('click', pickChoice);
     }
 
-    document.getElementById("numofwins").appendChild();
+});
+
+var x = document.getElementById("daudio");
+/**
+ * This function will play audio on click
+ */
+function playAudio() {
+    x.play();
+}
+
+const cpuArray = ["rock", "paper", "scissors", "lizard", "spock"];
+
+//listener for start menu button
+let myClick = document.getElementById('startbtn');
+myClick.addEventListener('click', gameChoices);
+
+/**
+ * This function will remove the Start page and will load the gamefile page 
+ */
+function gameChoices() {
+    window.location.href = 'gamefile.html';
+
+    let titlebar = document.getElementById('mainscreentitle');
+    titlebar.remove();
+
+    let start = document.getElementById('start');
+    start.remove();
+
+    let scoreboard = document.getElementById('scoreboard');
+    console.log(scoreboard).innerText;
 
 }
 
-
 /**
  * This function will add the player choice to the main window div and display it on screen
-*/
+ */
 function pickChoice() {
     let = picked = "";
-
+    playAudio();
     if (this.getAttribute('id') === "rock") {
         document.getElementById('main-window').innerHTML = `<i id="uno" class="fa-regular fa-hand-back-fist "></i>`;
         picked += "rock";
@@ -106,10 +75,6 @@ function pickChoice() {
 
 }
 
-
-
-
-
 /**
  * This Function will pick from the array variable declared above and pick a random one.
  */
@@ -123,7 +88,6 @@ function getRandomItem(arr) {
 
     return item;
 }
-
 
 /**
  * This Function will take the value from the user's choice and compare it to the random value and  display the choice on screen
@@ -142,208 +106,129 @@ function compareChoices() {
 
         document.getElementById('main-window').innerHTML += "It's a tie" + `<i id="uno" class="fa-regular fa-hand-back-fist "></i>`;
 
-
-    }
-
-
-
-    else if (picked === "rock" && result === "scissors") {
+    } else if (picked === "rock" && result === "scissors") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
-
-
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
-    }
-
-    else if (picked === "rock" && result === "paper") {
+    } else if (picked === "rock" && result === "paper") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="dos" class="fa-regular fa-hand"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
 
-    }
-
-    else if (picked === "rock" && result === "lizard") {
+    } else if (picked === "rock" && result === "lizard") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="cuatro" class="fa-regular fa-hand-lizard"></i>`;
-
-
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
-
-    }
-
-    else if (picked === "rock" && result === "spock") {
-        document.getElementById('main-window').innerHTML += "You Lose!" `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
-
-
-
+    } else if (picked === "rock" && result === "spock") {
+        document.getElementById('main-window').innerHTML += "You Lose!"
+            `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
     }
 
     //Comparison between paper vs all options
     else if (picked === "paper" && result === "paper") {
         document.getElementById('main-window').innerHTML += "It's a tie" + `<i id="dos" class="fa-regular fa-hand"></i>`;
 
-
-    }
-
-    else if (picked === "paper" && result === "rock") {
+    } else if (picked === "paper" && result === "rock") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="uno" class="fa-regular fa-hand-back-fist"></i>`;
-
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
-
-
-    }
-    else if (picked === "paper" && result === "scissors") {
+    } else if (picked === "paper" && result === "scissors") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
 
-
-    }
-
-    else if (picked === "paper" && result === "lizard") {
+    } else if (picked === "paper" && result === "lizard") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="cuatro" class="fa-regular fa-hand-lizard"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
 
-    }
-
-    else if (picked === "paper" && result === "spock") {
+    } else if (picked === "paper" && result === "spock") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
     }
-
 
     //Comparison between scissors vs all options
     else if (picked === "scissors" && result === "scissors") {
         document.getElementById('main-window').innerHTML += "It's a tie" + `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
 
-    }
-
-    else if (picked === "scissors" && result === "rock") {
+    } else if (picked === "scissors" && result === "rock") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="uno" class="fa-regular fa-hand-back-fist"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
 
-
-
-
-    }
-    else if (picked === "scissors" && result === "paper") {
+    } else if (picked === "scissors" && result === "paper") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="dos" class="fa-regular fa-hand"></i>`;
-
-
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
-    }
-
-    else if (picked === "scissors" && result === "lizard") {
+    } else if (picked === "scissors" && result === "lizard") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="cuatro" class="fa-regular fa-hand-lizard"></i>`;
-
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
-
-    }
-
-    else if (picked === "scissors" && result === "spock") {
+    } else if (picked === "scissors" && result === "spock") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
-
-
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
     }
-
 
     //Comparison between lizard vs all options
     else if (picked === "lizard" && result === "lizard") {
         document.getElementById('main-window').innerHTML += "It's a tie" + `<i id="cuatro" class="fa-regular fa-hand-lizard"></i>`;
 
-
-    }
-
-    else if (picked === "lizard" && result === "rock") {
+    } else if (picked === "lizard" && result === "rock") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="uno" class="fa-regular fa-hand-back-fist"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
 
-
-
-    }
-    else if (picked === "lizard" && result === "paper") {
+    } else if (picked === "lizard" && result === "paper") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="dos" class="fa-regular fa-hand"></i>`;
-
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
-    }
-
-    else if (picked === "lizard" && result === "scissor") {
+    } else if (picked === "lizard" && result === "scissor") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
 
-    }
-
-    else if (picked === "lizard" && result === "spock") {
+    } else if (picked === "lizard" && result === "spock") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
-
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
-
 
     }
-
-
 
     //Comparison between lizard vs all options
     else if (picked === "spock" && result === "spock") {
         document.getElementById('main-window').innerHTML += "It's a tie" + `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
 
-    }
-
-    else if (picked === "spock" && result === "rock") {
+    } else if (picked === "spock" && result === "rock") {
         document.getElementById('main-window').innerHTML += "You Win!" + `<i id="uno" class="fa-regular fa-hand-back-fist"></i>`;
-
-
-
         wins = parseInt(document.getElementById("score").innerText);
-        document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
+        document.getElementById("score").innerText = ++wins;;
 
-
-    }
-    else if (picked === "spock" && result === "paper") {
+    } else if (picked === "spock" && result === "paper") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="dos" class="fa-regular fa-hand"></i>`;
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
 
-
-    }
-
-    else if (picked === "spock" && result === "scissor") {
-        document.getElementById('main-window').innerHTML += "You Win!" `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
-
-
+    } else if (picked === "spock" && result === "scissor") {
+        document.getElementById('main-window').innerHTML += "You Win!"
+            `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
-        document.getElementById("wins").innerText = ++wins;
 
-
-    }
-
-    else if (picked === "spock" && result === "lizard") {
+    } else if (picked === "spock" && result === "lizard") {
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="cuatro" class="fa-regular fa-hand-lizard"></i>`;
-
-
+        wins = parseInt(document.getElementById("cpuscore").innerText);
+        document.getElementById("cpuscore").innerText = ++wins;
     }
-
 
 }
-
-
