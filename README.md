@@ -41,6 +41,11 @@ The choice panel Will display 5 options on a pill like shape that the user can p
 Located on the lower left corner the Back Button will take player to the Main Screen.
  ![Screenshot 2023-05-14 121701](https://github.com/DavidcD8/RPSGame/assets/91196677/3eac5641-1ef4-4e9d-a07a-cdcea7708277)
 
+## Bugs
+On the Main screen some items were displaying correctly  and dissapearing with the timeout function but some were not. Placing the timeout function inside compareChoices() function fixed the issue.
+
+
+
 
 ## Validator Testing
 No errors Found on jshint,  W3C validator and (Jigsaw) 
