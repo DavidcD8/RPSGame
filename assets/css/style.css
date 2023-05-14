@@ -481,11 +481,11 @@ body {
     }
 
     #numofwins {
-        bottom: 20px;
+        bottom: 1px;
     }
 
     #cpunumofwins {
-        bottom: 45px;
+        bottom: 4px;
     }
 
     #main-window {
