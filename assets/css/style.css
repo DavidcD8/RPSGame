@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    background-image: url(../images/background_img.png);
+    background: linear-gradient(90deg,#032b3d,#055c79);
     background-color: #cccccc;
     background-size: cover;
     margin: 0;
