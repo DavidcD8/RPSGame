@@ -9,15 +9,16 @@ body {
 }
 
 #backbtn {
-    top: 80%;
-    position: absolute;
-    font-size: 20px;
-    width: 50px;
-    left: 10px;
-    margin: 28px 0 10px 2px;
-    border-style: outset;
-    padding: 2px;
-    color: crimson;
+  top: 80%;
+  position: absolute;
+  font-size: 20px;
+  width: 50px;
+  left: 10px;
+  margin: 28px 0 10px 2px;
+  border-style: outset;
+  border-radius: 77px;
+  color: crimson;
+}
 }
 
 #backbtn:hover {
