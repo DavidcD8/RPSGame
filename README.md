@@ -1,7 +1,7 @@
 # RPS
 RPS is a game where the user picks between Rock, Paper, Scissor, Lizard or Spock and plays against a CPU. 
- ![Screenshot 2023-05-14 115828](https://github.com/DavidcD8/RPSGame/assets/91196677/f3881cd4-a98c-4b0e-8d70-892e2871ea43)
-
+ 
+![2](https://github.com/DavidcD8/RPSGame/assets/91196677/12e7f72b-9b17-4a50-b0ee-d1eb58c9f5ff)
 
 
 # Existing Features
@@ -18,7 +18,8 @@ In the main page the user will be greeted by a blue panel with a  press tart to 
 
 ## The Game Page
 on the game page the user will find the score board for the both the player and the CPU. The game page also includes the main screen and the buttons panel.
- ![Screenshot 2023-05-14 115801](https://github.com/DavidcD8/RPSGame/assets/91196677/6baf35c5-f5b4-4bf8-8054-013a1a03cd15)
+ ![a](https://github.com/DavidcD8/RPSGame/assets/91196677/7232d56c-cb27-43f1-801a-028439bf135a)
+
 
 
 ## The Score board
@@ -38,7 +39,8 @@ The choice panel Will display 5 options on a pill like shape that the user can p
 
 ## The Back Button
 Located on the lower left corner the Back Button will take player to the Main Screen.
-![Screenshot 2023-05-14 105920](https://github.com/DavidcD8/RPSGame/assets/91196677/85c0f05e-7e4e-40b8-9980-f4c7c9c5bf76)
+ ![Screenshot 2023-05-14 121701](https://github.com/DavidcD8/RPSGame/assets/91196677/3eac5641-1ef4-4e9d-a07a-cdcea7708277)
+
 
 ## Validator Testing
 No errors Found on jshint,  W3C validator and (Jigsaw) 
@@ -51,4 +53,4 @@ The site was deployed to GitHub pages. The steps to deploy are listed bellow: In
 - Timeout function Can be found at:https://www.w3schools.com/jsref/met_win_settimeout.asp
 - Icons used were found at: https://fontawesome.com/icons
 - Random number function: https://www.w3schools.com/js/js_random.asp
-- Photos were taken https://images.pexels.com
+
