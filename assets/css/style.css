@@ -9,6 +9,7 @@ body {
 }
 
 #backbtn {
+   text-decoration: none;
   top: 80%;
   position: absolute;
   font-size: 20px;
@@ -17,8 +18,7 @@ body {
   margin: 28px 0 10px 2px;
   border-style: outset;
   border-radius: 77px;
-  color: crimson;
-}
+  color: white;
 }
 
 #backbtn:hover {
