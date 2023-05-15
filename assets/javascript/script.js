@@ -106,7 +106,11 @@ function compareChoices() {
         document.getElementById("score").innerText = ++wins;
 
     } else if (picked === "rock" && result === "spock") {
+<<<<<<< HEAD
         document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
+=======
+        document.getElementById('main-window').innerHTML += "You Lose!" `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
+>>>>>>> b944b92a5023a2724b59d5ad07a7d59a3219133a
         wins = parseInt(document.getElementById("cpuscore").innerText);
         document.getElementById("cpuscore").innerText = ++wins;
     }
