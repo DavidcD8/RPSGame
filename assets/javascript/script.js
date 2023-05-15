@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cClick[i].addEventListener('click', pickChoice);
     }
 
+
 });
 
 var x = document.getElementById("daudio");
@@ -21,17 +22,8 @@ function playAudio() {
 
 const cpuArray = ["rock", "paper", "scissors", "lizard", "spock"];
 
-//listener for start menu button
-let myClick = document.getElementById('startbtn');
-myClick.addEventListener('click', gameChoices);
 
-/**
- * This function will remove the Start page and will load the gamefile page 
- */
-function gameChoices() {
-    window.location.href = 'gamefile.html';
-    document.getElementById('scoreboard');
-}
+
 var picked;
 var wins;
 /**
@@ -96,7 +88,6 @@ function compareChoices() {
 
     //Comparison between rock vs all options
     if (picked === "rock" && result === "rock") {
-
         document.getElementById('main-window').innerHTML += "It's a tie" + `<i id="uno" class="fa-regular fa-hand-back-fist "></i>`;
 
     } else if (picked === "rock" && result === "scissors") {
@@ -115,7 +106,7 @@ function compareChoices() {
         document.getElementById("score").innerText = ++wins;
 
     } else if (picked === "rock" && result === "spock") {
-        document.getElementById('main-window').innerHTML += "You Lose!"`<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
+        document.getElementById('main-window').innerHTML += "You Lose!" + `<i id="cinco" class="fa-regular fa-hand-spock"></i>`;
         wins = parseInt(document.getElementById("cpuscore").innerText);
         document.getElementById("cpuscore").innerText = ++wins;
     }
@@ -212,7 +203,7 @@ function compareChoices() {
         document.getElementById("cpuscore").innerText = ++wins;
 
     } else if (picked === "spock" && result === "scissor") {
-        document.getElementById('main-window').innerHTML += "You Win!"`<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
+        document.getElementById('main-window').innerHTML += "You Win!" `<i id="tres" class="fa-regular fa-hand-scissors"></i>`;
         wins = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++wins;
 
