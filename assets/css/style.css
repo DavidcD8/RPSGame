@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-<<<<<<< HEAD
     background: linear-gradient(90deg, #032b3d, #055c79);
-=======
-    background: linear-gradient(90deg,#032b3d,#055c79);
->>>>>>> b944b92a5023a2724b59d5ad07a7d59a3219133a
     background-color: #cccccc;
     background-size: cover;
     margin: 0;
@@ -13,7 +9,6 @@ body {
 }
 
 #backbtn {
-<<<<<<< HEAD
     text-decoration: none;
     top: 80%;
     position: absolute;
@@ -24,18 +19,6 @@ body {
     border-style: outset;
     border-radius: 77px;
     color: white;
-=======
-   text-decoration: none;
-  top: 80%;
-  position: absolute;
-  font-size: 20px;
-  width: 50px;
-  left: 10px;
-  margin: 28px 0 10px 2px;
-  border-style: outset;
-  border-radius: 77px;
-  color: white;
->>>>>>> b944b92a5023a2724b59d5ad07a7d59a3219133a
 }
 
 #backbtn:hover {
@@ -444,11 +427,7 @@ body {
     }
 
     #numofwins {
-<<<<<<< HEAD
         bottom: 3px;
-=======
-        bottom:3px;
->>>>>>> b944b92a5023a2724b59d5ad07a7d59a3219133a
     }
 
     #cpunumofwins {
