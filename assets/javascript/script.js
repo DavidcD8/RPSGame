@@ -12,12 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-var x = document.getElementById("daudio");
+
 /**
  * This function will play audio on click
  */
 function playAudio() {
-    x.play();
+    let audio = document.getElementById("daudio");
+    audio.play();
 }
 
 const cpuArray = ["rock", "paper", "scissors", "lizard", "spock"];
@@ -77,7 +78,6 @@ function getRandomItem(arr) {
 /**
  * This Function will take the value from the user's choice and compare it to the random value and  display the choice on screen
  */
-
 function compareChoices() {
     //calls random number funciton
     let result = getRandomItem(cpuArray);
