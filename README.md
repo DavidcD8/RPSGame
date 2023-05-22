@@ -51,7 +51,7 @@ On the Main screen some items were displaying correctly  and dissapearing with t
 No errors Found on jshint,  W3C validator and (Jigsaw) 
 
 ## Deployment
-The site was deployed to GitHub pages. The steps to deploy are listed bellow: In the GitHub repository, navigate to the Settings tab From the source section drop-down menu, select the Master Branch Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. The live link can be found here - [https://davidcd8.github.io/hi-res-photography/](https://davidcd8.github.io/RPSGame/index.html)
+The site was deployed to GitHub pages. The steps to deploy are listed bellow: In the GitHub repository, navigate to the Settings tab From the source section drop-down menu, select the Master Branch Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. The live link can be found here - [RPSgame](https://davidcd8.github.io/RPSGame/index.html)
 
 ## Credits
 - Google fonts used :https://fonts.google.com/specimen/Press+Start+2P
